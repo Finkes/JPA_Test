@@ -13,8 +13,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-public class Person 
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public abstract class Person 
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

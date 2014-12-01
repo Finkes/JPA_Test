@@ -5,6 +5,9 @@
   <persistence-unit name="courses" transaction-type="RESOURCE_LOCAL">
     <class>model.Person</class>
     <class>model.Dozent</class>
+    <class>model.Student</class>
+    <class>model.Dozent</class>
+        <class>model.Course</class>
     <properties>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/courses" />
